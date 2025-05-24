@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сюрприз</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fffafc;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .btn {
+            background-color: #ff6fa4;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #e0558c;
+        }
+        .message {
+            margin-top: 30px;
+            font-size: 24px;
+            display: none;
+        }
+        .hearts {
+            font-size: 40px;
+            color: #ff6fa4;
+            margin-bottom: 20px;
+        }
+        .flowers {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts">❤️❤️❤️</div>
+    <button class="btn" onclick="showMessage()">Нажми сюда</button>
+    <div class="message" id="morse">
+        <p>.- / .-.. ..- -... .-.. ..- / - . -... -.-- .-.-.- / -.. .- ...- .-..-- / -... -.-. - .--. .- .... -.-. .- .-.-.-</p>
+        <p><strong>Я люблю тебя. Давай встречаться!</strong></p>
+        <div class="flowers">🌸 🌺 🌼</div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('morse').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
